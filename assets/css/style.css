@@ -1,0 +1,49 @@
+@import url(./cabecalho/cabecalho.css);
+@import url(./formulario/formulario.css);
+@import url(./rodape/rodape.css);
+:root {
+    --verde: #33E29A;
+    --cinza: #414141;
+    --preto-claro: #262626;
+    --preto: #121212;
+    --branco-claro: #BAACAC;
+    --branco: #FFFFFF;
+    --fonte-principal: 'Kufam', sans-serif;
+    --fonte-secundaria: 'Inter', sans-serif;
+}
+
+
+
+
+body {
+    font-family: var(--fonte-principal);
+    background: url(../img/Background-mine.svg) center / cover no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.container {
+    padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 1440px) {
+    body {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background: url(../img/background-mobile.svg) center / cover no-repeat;
+        overflow-x: hidden;
+    }
+    .container {
+        padding: 1rem;
+    }
+}
+

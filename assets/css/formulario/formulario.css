@@ -1,0 +1,124 @@
+.formulario__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 38px;
+    background: rgba(38, 38, 38, 0.8);
+    border: 1px solid rgba(115, 115, 115, 0.5);
+    backdrop-filter: blur(2.5px);
+    border-radius: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.form__input {
+    color: var(--branco-claro);
+    width: 376px;
+    padding: 10px 14px;
+
+    background-color: var(--preto-claro);
+    border: 1px solid rgba(115, 115, 115, 0.5);
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 24px;
+}
+
+.form__input::placeholder {
+    color: var(--branco-claro);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.form__check-box {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.form__check {
+    color: var(--verde);
+    border: 0.15em solid var(--verde);
+    background-color: var(--preto-claro);
+    width: 16px;
+    height: 15px;
+    appearance: none;
+    border-radius: 3px;
+}
+
+.form__check:checked {
+    background: url(../../img/checked.svg) center / cover no-repeat;
+    border: none;
+}
+
+.form__label-check {
+    color: var(--branco);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 11px;
+    cursor: pointer;
+}
+
+.form__btn {
+    color: var(--branco);
+    background-color: var(--verde);
+    box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.05), 0px 2px 0px #FFFFFF, inset 0px 2px 0px rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+
+    display: inline-block;
+    margin-bottom: 32px;
+}
+
+.form__btn:hover {
+    background: linear-gradient(90.89deg, #22AE75 0%, #00874F 52.36%);
+}
+
+
+.form__btn--remember {
+    color: var(--verde);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    .form__input {
+        width: 245px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .form__input {
+        width: auto;
+    }
+}
+@media screen and (max-width: 320px) {
+    .formulario__container {
+        padding: 32px 30px;
+    }
+}
+
