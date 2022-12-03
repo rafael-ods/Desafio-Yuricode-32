@@ -40,7 +40,6 @@ body {
 @media screen and (max-width: 500px) {
     body {
         background: url(../img/background-mobile.svg) center / cover no-repeat;
-        overflow-x: hidden;
     }
     .container {
         padding: 1rem;

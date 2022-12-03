@@ -1,7 +1,9 @@
 .rodape {
     display: flex;
+    justify-content: space-between;
     column-gap: 42px;
     margin: 50px 0;
+    flex-wrap: wrap;
 }
 
 .rodape__lista {
@@ -17,25 +19,40 @@
     margin-top: 17px;
 }
 
+h1 {
+    display: none;
+    color: var(--verde);
+    text-align: center;
+    width: auto;
+    margin: 15px;
+}
 
 @media screen and (max-width: 1024px) {
     .rodape__lista__item p {
         font-size: 14px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .rodape__lista__item p {
         font-size: 11px;
     }
 }
+
 @media screen and (max-width: 500px) {
     .rodape {
         flex-direction: column;
     }
+
     .rodape__lista {
         margin-bottom: 48px;
     }
+
     .rodape__lista__item p {
         font-size: 14px;
+    }
+
+    h1 {
+        display: block;
     }
 }
