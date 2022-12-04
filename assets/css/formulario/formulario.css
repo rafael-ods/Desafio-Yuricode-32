@@ -42,6 +42,10 @@
     line-height: 24px;
 }
 
+.form__input:focus {
+    border: 1px solid var(--verde);
+}
+
 .form__check-box {
     align-self: flex-start;
     display: flex;
